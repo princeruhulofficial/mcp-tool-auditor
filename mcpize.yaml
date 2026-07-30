@@ -1,0 +1,43 @@
+name: tool-auditor
+display_name: MCP Tool Auditor
+slug: tool-auditor
+version: 1.0.0
+description: >
+  Audit any MCP tool description for LLM reliability. Detects common "smells"
+  (vague purpose, missing usage guidelines, opaque parameters), scores quality
+  0-100, and rewrites descriptions so AI agents pick the right tool more often.
+  Zero external APIs — pure computation. Built for developers who care about
+  agent accuracy.
+category: developer-tools
+tags:
+  - mcp
+  - reliability
+  - tool-quality
+  - agent
+  - llm
+  - audit
+  - description
+author: princeruhulofficial
+homepage: https://github.com/princeruhulofficial/mcp-tool-auditor-20260730
+repository: https://github.com/princeruhulofficial/mcp-tool-auditor-20260730
+license: MIT
+runtime: node
+entry: dist/index.js
+pricing:
+  model: freemium
+  free:
+    requests_per_day: 100
+    description: "Free: 100 audits/day — perfect for testing"
+  pro:
+    price_monthly: 9
+    requests_per_day: 2000
+    description: "Pro $9/mo: 2000 audits/day + priority"
+tools:
+  - name: audit_tool
+    description: Score a single tool description and list smells + fix suggestions
+  - name: rewrite_tool_description
+    description: Generate a high-quality rewritten description following best practices
+  - name: audit_tool_list
+    description: Audit a full list of tools (detect overcrowding + rank quality)
+  - name: get_best_practices
+    description: Return the current MCP tool description best-practice checklist
