@@ -6,7 +6,7 @@
 
 [![MCP](https://img.shields.io/badge/MCP-compatible-blue)](https://modelcontextprotocol.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Daily AI Project](https://img.shields.io/badge/Daily%20AI%20Project-Grok-orange)](https://github.com/princeruhulofficial)
+
 
 ## Why this exists
 
